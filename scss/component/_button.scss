@@ -1,0 +1,53 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $base-color;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition-duration: .5s;
+}
+
+//Used an Each loop for these, find in Mixins
+
+
+// &.default{
+//   background-color: #51ddfc;
+//   // @include linkmaster(default);
+// }
+//
+// &.error {
+//   background-color: #e4757a;
+//   // @include linkmaster(error);
+// }
+//
+// &.info {
+//   background-color: #927bc1;
+//   // @include linkmaster(info);
+// }
+//
+// &.success {
+//   background-color: #63cc82;
+//   // @include linkmaster(success);
+// }
+//
+// &.warning {
+//   background-color: #fd7856;
+//   // @include linkmaster(warning);
+//   }
+// }
+
+// @mixin linkmaster($color){
+//   &:hover{
+//     background-color: lighten(map-get($buttons, '#{$color}'), 15%);
+//   }
+// }
+//
+// @mixin hovercolors($color){
+//   background-color: lighten(map-get($buttons, '#{$color}'), 15%);
+// }

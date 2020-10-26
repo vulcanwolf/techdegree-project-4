@@ -1,0 +1,47 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  // A mixin just seemed more fun then 2 variables 
+  @include fontfam();
+  color: $base-color;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+.headline-primary {
+  color: $headline-prime-color;
+  margin-left: 10px;
+}
+
+.headline-secondary {
+  font-weight: $font-w-headline-second;
+  color: $headline-second-color;
+}
+
+.link {
+  color: $link-color;
+  font-weight: $font-w-link;
+}
+
+.blockquote {
+  font-size: $font-size;
+  font-weight: $font-w-headline-second;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $border-color;
+  border-radius: 5px;
+}

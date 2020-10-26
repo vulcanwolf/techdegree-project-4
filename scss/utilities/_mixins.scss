@@ -1,0 +1,38 @@
+//Font Mixin
+@mixin fontfam($first: 'Lato', $second:'sans-serif'){
+  font-family: $first, $second;
+}
+
+//These loops replace much of the repetetive code through out the scss files
+
+//Button Hover States 
+@each $class in $button-list{
+  .btn.#{$class}{
+      &:hover{
+        background-color: lighten(map-get($buttons, #{$class}), 15%);
+      }
+    }
+  }
+
+//Buttons Background-Color
+@each $class in $button-list{
+  .btn.#{$class}{
+        background-color: (map-get($buttons, #{$class}));
+      }
+    }
+
+// Theme colors of Grid
+@for $i from 1 through 12{
+  .theme.col-#{$i}{
+    background-color: map-get($list-themes, '#{$i}');
+  }
+}
+
+// Meida Querie Columns flex-basis
+@mixin col-width(){
+@for $i from 1 through 12{
+  .col-#{$i}{
+    flex-basis: map-get($list-flex, #{$i});
+    }
+  }
+}
